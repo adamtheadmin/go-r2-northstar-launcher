@@ -1,0 +1,4 @@
+testdir
+*.exe
+.DS_Store
+.idea
