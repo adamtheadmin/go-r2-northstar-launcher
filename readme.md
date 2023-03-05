@@ -1,4 +1,4 @@
-### R2Northstar Updater
+### R2Northstar Launcher
 
 
 This is a golang launcher and installer for R2Northstar. Upon launch, it will check the R2 Releases for a new version and install it if your installation is out of date.
@@ -15,7 +15,7 @@ Streaming is leveraged to provision the files as quickly as possible.
 
 ### Usage
 
-Just download the latest version at the [releases](https://github.com/adamtheadmin/R2Northstar-Updater/releases) page. You must have a legit version of Titanfall 2 installed.
+Just download the latest version at the [releases](https://github.com/adamtheadmin/go-r2-northstar-launcher/releases) page. You must have a legit version of Titanfall 2 installed.
 The EXE file does not need to be in the same directory as your Titanfall 2 installation.
 
 ### Building from source
