@@ -1,3 +1,3 @@
-module adamtheadmin/go-r2-northstar-updater
+module adamtheadmin/launcher
 
 go 1.20

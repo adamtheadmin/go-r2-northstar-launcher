@@ -53,9 +53,5 @@ func R2Updater(location string, release Release) error {
         }
     }
 
-    if err := DiscordFixPatch(location); err != nil {
-        return err;
-    }
-
     return nil
 }
