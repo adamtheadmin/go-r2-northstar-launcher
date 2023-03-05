@@ -1,9 +1,9 @@
 package main
 
 import (
-    "encoding/json"
-    "net/http"
-    "time"
+	"encoding/json"
+	"net/http"
+	"time"
 )
 
 type Release struct {
@@ -93,17 +93,17 @@ type Release struct {
 	} `json:"reactions,omitempty"`
 }
 
-func getReleases() ([]Release) {
-    resp, err := http.Get("https://api.github.com/repos/R2Northstar/Northstar/releases")
-    if err != nil {
-        panic(err);
-    }
-    defer resp.Body.Close()
+func getReleases() []Release {
+	resp, err := http.Get("https://api.github.com/repos/R2Northstar/Northstar/releases")
+	if err != nil {
+		panic(err)
+	}
+	defer resp.Body.Close()
 
-    var releases []Release
-    err = json.NewDecoder(resp.Body).Decode(&releases)
-    if err != nil {
-        panic(err);
-    }
-    return releases
+	var releases []Release
+	err = json.NewDecoder(resp.Body).Decode(&releases)
+	if err != nil {
+		panic(err)
+	}
+	return releases
 }

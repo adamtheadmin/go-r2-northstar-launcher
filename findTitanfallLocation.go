@@ -10,11 +10,11 @@ var locations = []string{
 	"C:/Program Files/EA Games/Titanfall2",
 }
 
-func findTitanfallLocation() (string) {
+func findTitanfallLocation() string {
 	for _, location := range locations {
 		if _, err := os.Stat(location); err == nil {
 			return location
 		}
 	}
-	panic("Could not find Titanfall 2 location");
+	panic("Could not find Titanfall 2 location")
 }
