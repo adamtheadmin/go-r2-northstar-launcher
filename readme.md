@@ -19,8 +19,9 @@ Just download the latest version at the [releases](https://github.com/adamtheadm
 The EXE file does not need to be in the same directory as your Titanfall 2 installation.
 
 ### Building from source
-Please Install golang first!
-- `./build.sh`
+ - Please Install [golang](https://go.dev/learn/) first!
+ - [Install UPX](https://github.com/upx/upx) (To bypass windows defender)
+ - `./build.sh`
 
 ### Contributing
 

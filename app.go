@@ -7,7 +7,10 @@ import (
 )
 
 func main() {
-	location := findTitanfallLocation()
+	location, err := findTitanfallLocation()
+	if err != nil {
+    	panic(err)
+    }
 	vm := &VersionManager{Location: location}
 	fmt.Println("Found Titanfall at: " + location)
 	fmt.Println("Downloading R2 Release list...")
